@@ -3,6 +3,8 @@ import { resolve } from 'path';
 import { VitePWA } from 'vite-plugin-pwa'; // Import VitePWA
 
 export default defineConfig({
+  base: '/starter-project-with-vite-v2/', // ⬅️ Tambahkan baris ini!
+  
   root: resolve(__dirname, 'src'),
   publicDir: resolve(__dirname, 'src', 'public'),
   build: {
@@ -26,12 +28,12 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/pwa-192x192.png', // Path relatif terhadap publicDir
+            src: '/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/pwa-512x512.png', // Path relatif terhadap publicDir
+            src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
@@ -47,7 +49,7 @@ export default defineConfig({
               cacheName: 'api-data',
               expiration: {
                 maxEntries: 100,
-                maxAgeSeconds: 24 * 60 * 60, // 24 jam
+                maxAgeSeconds: 24 * 60 * 60,
               },
             },
           },
