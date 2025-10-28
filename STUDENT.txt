@@ -1,1 +1,2 @@
 https://github.com/falezayassiniaokta-coder/starter-project-with-vite-v2
+https://falezayassiniaokta-coder.github.io/starter-project-with-vite-v2/
